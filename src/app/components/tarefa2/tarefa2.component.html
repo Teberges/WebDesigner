@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let tarefa of tarefas" >
+    {{ tarefa.descricao }}
+    <button
+            (click)="alternarConcluida(tarefa)">
+      {{ tarefa.concluida ? 'Ativar' : 'Concluir' }}
+    </button>
+  </li>
+</ul>
